@@ -27,6 +27,8 @@ class MyArrayList<E> {
 
 public class GeneriskProgrammering {
 
+    //Oppgave 2.1
+
     public static <E> void printArray(E[] array){
         for (E elem : array){
             System.out.print(elem + " ");
@@ -34,6 +36,8 @@ public class GeneriskProgrammering {
         System.out.println();
     }
 
+
+    //Oppgave 2.2
     public static <E> E[] reverseArray(E[] array){
         Object[] reverse = new Object[array.length];
 
@@ -50,13 +54,22 @@ public class GeneriskProgrammering {
 
     public static void main(String[] args){
         Integer[] intArray = {1, 2, 3, 4, 5};
+        Double[] doubleArray = {4.2, 7.91, 4.00, 12.03};
         String[] strArray = {"Hei", "Test", "String"};
 
+        System.out.println("Oppgave 2.1: ");
         printArray(intArray);
+        printArray(doubleArray);
         printArray(strArray);
 
+        System.out.println();
+
+        System.out.println("Oppgave 2.2: Reversert array");
         printArray(reverseArray(intArray));
+        printArray(reverseArray(doubleArray));
         printArray(reverseArray(strArray));
+
+
 
     }
 
