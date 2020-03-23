@@ -1,4 +1,4 @@
-package generiskProgrammering;
+package src.generiskProgrammering;
 
 
 
